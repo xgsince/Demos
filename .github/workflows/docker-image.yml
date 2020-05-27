@@ -20,5 +20,8 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         dockerfile: WebApp/Dockerfile
+        tags: v1.0
         repository: xgsince/corewebapplication1
         tag_with_ref: true
+    #- name: SSH Remote Commands
+     # uses: appleboy/ssh-action@v0.1.1
